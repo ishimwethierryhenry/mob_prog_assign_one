@@ -8,7 +8,7 @@ Group:Tuesday(E1)
 
 The  following are the screenshots of mobile programming first assignment of,
 
-printing hello and designing a simple calculator
+printing hello and designing a simple calculator using flutter under influence of VS Code and Android Studio
 
 
 
