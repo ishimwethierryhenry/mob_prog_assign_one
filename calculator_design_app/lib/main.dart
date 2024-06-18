@@ -35,7 +35,10 @@ class _CalculatorState extends State<Calculator> {
       num1 = 0.0;
       num2 = 0.0;
       operand = "";
-    } else if (buttonText == "+" || buttonText == "-" || buttonText == "x" || buttonText == "/") {
+    } else if (buttonText == "+" ||
+        buttonText == "-" ||
+        buttonText == "x" ||
+        buttonText == "/") {
       num1 = double.parse(output);
       operand = buttonText;
       _output = "0";
@@ -78,8 +81,10 @@ class _CalculatorState extends State<Calculator> {
 
   Widget buildButton(String buttonText) {
     return Expanded(
-      child: OutlineButton(
-        padding: EdgeInsets.all(24.0),
+      child: OutlinedButton(
+        style: OutlinedButton.styleFrom(
+          padding: EdgeInsets.all(24.0),
+        ),
         child: Text(
           buttonText,
           style: TextStyle(
